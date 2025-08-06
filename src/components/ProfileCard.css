@@ -1,0 +1,280 @@
+.profile-card {
+  width: 360px;
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  background: #fff8d6;
+  color: #a18a28;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.badge-icon {
+  margin-right: 6px;
+}
+
+/* Header */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.photo-container {
+  position: relative;
+  width: 30%;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.flag-overlay {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.profile-container {
+    width: 70%;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  font-size: 1.3rem;
+  color: #a18a28;
+  margin: 0;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.company-logo {
+    width: 30%;
+    height: auto;
+    border: 1px solid #dedede;
+    border-radius: 10%;
+}
+
+/* Skills */
+.skills-section {
+  display: flex;
+  align-items: center;
+}
+
+.skills {
+  color: #34326e;
+  font-weight: bold;
+}
+
+/* Match bar */
+.match-section {
+  display: flex;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background: #ddd;
+  border-radius: 8px;
+  margin-right: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #34326e;
+}
+
+.match-text {
+  font-size: 0.9rem;
+  margin-left: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.star {
+    margin-left: auto;
+    color: #c2b281;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 2px solid #a18a28;
+  color: #a18a28;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.btn-outline:hover {
+  background: #fdf6e3;
+}
+
+.btn-solid {
+    background: #a18a28;
+    color: #fff;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.btn-solid:hover {
+  background: #8c7721;
+}
+
+.chat-icon {
+  margin-right: 6px;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+  .profile-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .badge {
+    font-size: 10px;
+    top: -8px;
+    left: 10px;
+    padding: 4px 8px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo-container {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .flag-overlay {
+    width: 18px;
+    height: 18px;
+    bottom: 3px;
+    right: 3px;
+  }
+
+  .profile-container {
+    width: 100%;
+}
+
+  .profile-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .profile-info p {
+    font-size: 0.8rem;
+  }
+
+  .company-logo {
+    margin: 8px 0;
+  }
+
+  .star {
+    margin-top: 8px;
+  }
+
+  .match-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+
+    .progress-bar {
+        width: 100%;
+        max-width: 250px; 
+        flex: none; 
+    }
+
+
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .btn-solid {
+    justify-content: center;
+    gap: 6px;
+  }
+}
+
